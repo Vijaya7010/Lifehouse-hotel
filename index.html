@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifehouse : Hotel Website</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- swiper js link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Bootstrap Link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+  <!-- navbar -->
+  <header class="header_wrapper">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" class="img-fluid " alt="logo" width=150px>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- name of stream - fas fa-stream  name of class - navbar-toggler-icon -->
+          <i class="fas fa-stream navbar-toggler"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rooms">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#price">Price</a>
+            </li>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li> -->
+            <li class="nav-item mt-3 mt-lg-0">
+              <a class="main-btn" href="#">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- navbar finish -->
+
+  <!-- Banner Section -->
+  <section id="home" class="banner_wrapper p-0">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide" style="background-image: url(images/slider/building.jpg);"> <!--background image 1-->
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Welcome to the Lifehouse Hotel</h1>
+              <p> Luxury Redefined. Descend into a world that was once the sole preserve of royalty, step onto the soft,
+                white sand beaches at a secluded island or discover the hidden secrets of mist-draped hills with
+                LifeHouse Group of Hotels.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url(images/slider/resto);"> <!--background image 2-->
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Welcome to the Lifehouse Hotel</h1>
+              <p>Make your stay Special by diving into the peace of nature. We provide you convenient and luxurious ways
+                to discover your life, explore new adventures and enjoy the vacation with your family and friends taking
+                things up more than a notch.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url(images/slider/sideview.jpg);"> <!--background image 3-->
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Welcome to the Lifehouse Hotel</h1>
+              <p>Discover the perfect balance of Hospitality, Luxury and Comfort. Sink into a plush, king-size suites,
+                stretch out in separate spaces for dining and entertaining. Hotel Lifehouse is a part of a new
+                generation of hotels, inspired to be extraordinary.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Booking Area -->
+    <div class="container booking-area">
+      <form class="row">
+        <div class="col-lg mb-3 mb-lg-0">
+          <input type="date" class="form-control" placeholder="Check-in Date">
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <input type="date" class="form-control" placeholder="Check-out Date">
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <select class="form-select rounded-3">
+            <option selected>Adults</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <select class="form-select rounded-3">
+            <option selected>Children</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <button type="submit" class="main-btn rounded-3 px-lg-3">Check Availablity</button>
+        </div>
+      </form>
+    </div>
+    <br>
+    <hr>
+  </section>
+
+
+  <!-- Banner Section exit -->
+
+  <!-- About Section -->
+
+  <section id="about" class="about_wrapper">
+
+    <div class="container">
+      <div class="row flex-lg-row flex-column-reverse">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h3>Welcome to our <span>Hotel <br class="d-none d-lg-block">
+              the Heaven</span> of your weekend</h3>
+          <p>Experience the epitome of opulence and personalized care,
+            as we invite you to immerse yourself in a haven designed to cater to your every desire.
+          </p>
+          <p>Discover a captivating retreat where exceptional service meets unparalleled comfort,
+            offering a seamless blend of modern luxury and timeless charm.</p>
+          <a href="#" class="main-btn mt-4">Explore</a>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+          <img src="images/about/reception.jpg" class="img-fluid" alt="about">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section Finish -->
+
+  <!-- Rooms Section  -->
+  <section id="rooms" class="rooms_wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>What I can do for you</h6>
+          <h3>Our Favorite Rooms</h3>
+        </div>
+      </div>
+      <div class="row m-0">
+        <div class="col-md-4 mb-4 mb-lg-0">
+          <div class="room-items">
+            <img src="images/room/img1.jpg" class="img-fluid">
+            <div class="room-item-wrap">
+              <div class="room-content">
+                <h5 class="text-white mb-lg-5 text-decoration-underline">DELUXE SUITE</h5>
+                <p class="text-white"> The modern decorated rooms, can accommodate up to 2-3 persons, totally
+                  soundproofed and equipped with high tech comforts, modern furniture and amenities.</p>
+                <p class="text-white fw-bold mt-lg-4">7999Rs/- Per Night</p>
+                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-lg-0">
+          <div class="room-items">
+            <img src="./images/room/img2.jpg" class="img-fluid">
+            <div class="room-item-wrap">
+              <div class="room-content">
+                <h5 class="text-white mb-lg-5 text-decoration-underline">ROYAL SUITE</h5>
+                <p class="text-white">The luxurious Suite features a lavishly decorated living room with a
+                  handmade glass chandelier. It is serviced by an open kitchen, marble bathroom, private gym, and a private spa salon. </p>
+                <p class="text-white fw-bold mt-lg-4">15,999Rs/-Per Night</p>
+                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-lg-0">
+          <div class="room-items">
+            <img src="./images/room/3.jpg" class="img-fluid">
+            <div class="room-item-wrap">
+              <div class="room-content">
+                <h5 class="text-white mb-lg-5 text-decoration-underline">EXECUTIVE SUITE</h5>
+                <p class="text-white">It offers guests a taste of refined city living.
+                  The luxurious floor complete with a spacious living room and a fully-furnished kitchen,
+                  proves to be a delightful place away from home. </p>
+                <p class="text-white fw-bold mt-lg-4">12,999Rs/-Per Night</p>
+                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Rooms Section Finish -->
+
+  <!-- Services Section -->
+  <section id="services" class="services_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>We Are here For You</h6>
+          <h3>Our Awesome Services</h3>
+        </div>
+      </div>
+      <div class="row align-items-center services-item-wrap">
+        <div class="col-lg-8 p-lg-0">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="spa" role="tabpanel">
+              <img class="service-image" src="images/services/spa.jpg">
+            </div>
+            <div class="tab-pane fade" id="restaurent" role="tabpanel">
+              <img class="service-image" src="./images/services/restaurent.jpg">
+            </div>
+            <div class="tab-pane fade" id="swimming" role="tabpanel">
+              <img class="service-image" src="./images/services/swimming.jpg">
+            </div>
+            <div class="tab-pane fade" id="Bar" role="tabpanel">
+              <img class="service-image" src="./images/services/bar.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 position-relative">
+          <div class="service-menu-area">
+            <ul class="nav">
+              <li>
+                <a data-bs-toggle="tab" href="#spa" class="active">
+                  <span class="service-icon">
+                    <img class="service-images" src="images/services/icon2.png" alt="">
+                  </span>
+                  <h5>Spa, Beauty & Wellness</h5>
+                  <p><span>Spa & Beauty </span>: Get ready to nurture your mind, body & soul with this soothing
+                    experience. </p>
+                </a>
+              </li>
+              <li>
+                <a data-bs-toggle="tab" href="#restaurent">
+                  <span class="service-icon">
+                    <img class="service-images" src="images/services/icon1.png" alt="">
+                  </span>
+                  <h5>Restaurent</h5>
+                  <p><span>Breakfast, Lunch and Dinner : </span> Taste the real delicacies with our dining services.</p>
+                </a>
+              </li>
+              <li>
+                <a data-bs-toggle="tab" href="#swimming">
+                  <span class="service-icon">
+                    <img class="service-images" src="images/services/icon4.png" alt="">
+                  </span>
+                  <h5>Swimming pool</h5>
+                  <p><span>Swimming pool :</span> Dive into the beautiful world away from stress by the perfect pool.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a data-bs-toggle="tab" href="#Bar">
+                  <span class="service-icon">
+                    <img class="service-images" src="images/services/icon3.png" alt="">
+                  </span>
+                  <h5>Bar</h5>
+                  <p><span> Bar :</span> Join us to feel the beauty of the night with music & dance, food & booze. </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="counter mt-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h1>
+              <span id="count1"></span>+
+            </h1>
+            <p>Happy Clients</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h1>
+              <span id="count2"></span>+
+            </h1>
+            <p>New Friendships</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h1>
+              <span id="count3"></span>+
+            </h1>
+            <p>Five star Ratings</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h1>
+              <span id="count4"></span>+
+            </h1>
+            <p>Served Breakfast</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section Finish -->
+
+  <!-- Team Section -->
+  <section id="team" class="team_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>What I can do for you</h6>
+          <h3>Our Special Staff</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0 rounded-3">
+            <img src="images/team/1.jpg" alt="Adarsh Saxena" width="500" height="600">
+            <div class="team-info">
+              <h5>Adarsh Saxena</h5>
+              <p>General Manager</p>
+              <ul class="social-network">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0 rounded-3">
+            <img src="images/team/2.jpg" alt="Anusha Rathore" width="500" height="600">
+            <div class="team-info">
+              <h5>Anusha Rathore</h5>
+              <p>Chief Reception Officer</p>
+              <ul class="social-network">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0 rounded-3">
+            <img src="images/team/3.jpg" alt="Vijaya Dongre" width="500" height="600">
+            <div class="team-info">
+              <h5>Vijaya Dongre</h5>
+              <p>Masterchef</p>
+              <ul class="social-network">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0 rounded-3">
+            <img src="images/team/4.jpg" alt="Rishita Jain" width="500" height="600">
+            <div class="team-info">
+              <h5>Rishita Jain</h5>
+              <p>Event Manager</p>
+              <ul class="social-network">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- Team Section Finish -->
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>Best Pictures Of Our Hotel</h6>
+          <h3>Our Gallery</h3>
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class="col-1g-3 col-md-6 gallery-item">
+          <img src="images/gallery/g2.jpeg" width = 700px height = 500px>
+          <div class="gallery-item-content"></div>
+        </div>
+        <div class="col-1g-3 col-md-6 gallery-item">
+          <img src="images/gallery/2.jpg" width = 700px height = 500px>
+          <div class="gallery-item-content"></div>
+        </div>
+        <div class="col-1g-3 col-md-6 gallery-item">
+          <img src="images/gallery/3.jpg" width = 700px height = 500px>
+          <div class="gallery-item-content"></div>
+        </div>
+        <div class="col-1g-3 col-md-6 gallery-item">
+          <img src="images/gallery/4.jpg" width = 700px height = 500px>
+          <div class="gallery-item-content"></div>
+        </div>
+        <div class="col-md-6 gallery-item">
+          <img src="images/gallery/5.jpg" width = 700px height = 500px>
+          <div class="gallery-item-content"></div>
+        </div>
+        <div class="col-md-6 gallery-item">
+          <img src="images/gallery/6.jpg" width = 700px height = 500px>
+          <div class="gallery-item-content"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery Section Finish -->
+
+  <!-- Price Section  -->
+  <section id="price" class="price_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>Best & Affordable Price for you</h6>
+          <h3>Our Pricing</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-4 text-center rounded-3">
+            <h5 class="text-decoration-underline mb-4">ECONOMIC</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>Flight Ticket(2)</p>
+              </li>
+              <li>
+                <p>Music Concert (30% off)</p>
+              </li>
+              <li>
+                <p>Restaurant (Snacks)</p>
+              </li>
+              <li>
+                <p>Face Make(No)</p>
+              </li>
+            </ul>
+            <hr />
+            <h3>$150<sub class="fs-7 fw-normal">/NIGHT</sub></h3>
+            <a href="#" class="main-btn">Sign Up</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-4 text-center rounded-3">
+            <h5 class="text-decoration-underline mb-4">UPGRADED</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>Flight Ticket(3)</p>
+              </li>
+              <li>
+                <p>Music Concert (50% off)</p>
+              </li>
+              <li>
+                <p>Restaurant (Breakfast and Lunch)</p>
+              </li>
+              <li>
+                <p>Face Make(Yes)</p>
+              </li>
+            </ul>
+            <hr />
+            <h3>$350<sub class="fs-7 fw-normal">/NIGHT</sub></h3>
+            <a href="#" class="main-btn">Sign Up</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-4 text-center rounded-3">
+            <h5 class="text-decoration-underline mb-4">MID-RANGE</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>Flight Ticket(3)</p>
+              </li>
+              <li>
+                <p>Music Concert (60% off)</p>
+              </li>
+              <li>
+                <p>Restaurant (BreakFast and Dinner)</p>
+              </li>
+              <li>
+                <p>Face Make(Yes)</p>
+              </li>
+            </ul>
+            <hr />
+            <h3>$550<sub class="fs-7 fw-normal">/NIGHT</sub></h3>
+            <a href="#" class="main-btn">Sign Up</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-4 text-center rounded-3">
+            <h5 class="text-decoration-underline mb-4">LUXURY</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>Flight Ticket(4)</p>
+              </li>
+              <li>
+                <p>Music Concert (75% off)</p>
+              </li>
+              <li>
+                <p>Restaurant (All)</p>
+              </li>
+              <li>
+                <p>Face Make(Yes)</p>
+              </li>
+            </ul>
+            <hr />
+            <h3>$750<sub class="fs-7 fw-normal">/NIGHT</sub></h3>
+            <a href="#" class="main-btn">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Price Section Finish -->
+
+  <!-- Footer Section -->
+  <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
+    <div class="container pb-3">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h5>Hotel Location</h5>
+          <p class="ps-0">Situated on the shores of Nusa Dua this resort property is a unique sanctuary of exotic beauty
+            and comfort,
+            its proximity makes it the perfect hideaway for those seeking a dream vacation. Be charmed by the unique
+            nature of Lifehouse Spa and Resort's tropical architecture expressing the essence of
+            Bali. Its enormous swimming pool winds throughout the hotel grounds, providing guests with a place to
+            relax and refresh!</p>
+          <div class="contact-info">
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="fa fa-home me-3"></i>No.-56 South Island, Indonesia </a></li>
+              <li><a href="#"><i class="fa fa-phone me-3"></i>+62 113826518 92</a></li>
+              <li><a href="#"><i class="fa fa-envelope me-3"></i>lifehouse@hotels.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Property Amenities</h5>
+          <ul class="link-widget p-0">
+            <li><a href="#">Bar / Lounge</a></li>
+            <li><a href="#">Fitness Centre with Gym</a></li>
+            <li><a href="#">5 Star Rooms</a></li>
+            <li><a href="#">Dining and Cafeteria</a></li>
+            <li><a href="#">Swimming Pool</a></li>
+            <li><a href="#">Bicycle Rental</a></li>
+            <li><a href="#">Parking Facility</a></li>
+            <li><a href="#">Unlimited Free Internet </a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>More Links</h5>
+          <ul class="link-widget p-0">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Office</a></li>
+            <li><a href="#">Food Delivery</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Buy Gift Card</a></li>
+            <li><a href="#">Hotel Deals</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Return Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Newsletter</h5>
+          <div class="form-group mb-4">
+            <input type="email" class="form-control bg-transparent text-white" placeholder="Enter your email">
+            <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
+          </div>
+          <h5>Stay Connected</h5>
+          <ul class="social-network d-flex align-items-center p-0">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid copyright-section">
+      <p>Copyright<a href="#"> @ Vijaya_Dongre </a> All Rights Reserved</p>
+    </div>
+  </section>
+
+  <!-- Footer Section Finish -->
+
+  <!-- Bootstrap 5 JS CDN Links -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Javascript Link -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
